@@ -1,0 +1,11 @@
+docker build -t image-mysql1 .    - сбилдить образ из папки с докерфайлом
+docker run -d -p 3306:3306 --name container-mysql1 image-mysql1    - создать контейнер с именем
+docker start container-mysql1
+
+docker run -i -t ubuntu /bin/bash  (-i - провалиться в терминал)
+docker run -it 6d9bf0da68b2 /bin/bash
+docker exec -it 6d9bf0da68b2  bash
+winpty docker exec -it  my-mariadb bash
+mysql -u root -pmy-secret-pw mydatabase
+
+

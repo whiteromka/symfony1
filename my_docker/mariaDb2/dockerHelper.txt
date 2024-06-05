@@ -1,0 +1,9 @@
+docker build -t mariadb2 .    - сбилдить образ из папки с докерфайлом
+docker run -d -p 3306:3306 --name my-mariadb my-mariadb-image    - создать контейнер с именем
+docker start my-mariadb
+
+docker run -i -t ubuntu /bin/bash  (-i - провалиться в терминал)
+docker run -it 6d9bf0da68b2 /bin/bash
+docker exec -it 6d9bf0da68b2  bash
+winpty docker exec -it  my-mariadb bash
+mysql -u root -pmy-secret-pw mydatabase
